@@ -38,7 +38,7 @@ gulp.task("css-production", function(){
 		.pipe(minify())
 		.pipe(rename({suffix: ".min"}))
 		.pipe(gulp.dest(csspaths.dest))
-		.pipe(size({showFiles: true, gzip: true}))
+		.pipe(size({showFiles: true, gzip: true, title: "Ready for production, don't forget to target the minify css in your link tag"}))
 		.pipe(reload({stream: true}));
 })
 
