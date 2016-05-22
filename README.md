@@ -9,12 +9,12 @@ A little tool for fast prototyping.
 ### Usage
 
 1. Clone the repo: `https://github.com/andresolivares/fast.git`
-2. Go to inside the folder and just run `npm install` 
-3. ...And run `gulp` 
+2. Go to inside the folder and just run `npm install`
 
-### Note
+### TODO
 
-Use `gulp production` to minify your css file for now.
+1. Minify js files
+
 
 ### License
 
