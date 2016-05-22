@@ -8,7 +8,7 @@ A little tool for fast prototyping.
 
 ### Usage
 
-1. Clone the repo: `https://github.com/andresolivares/fast.git`
+1. Clone the repo: `https://github.com/franciscogo/fast.git`
 2. Go to inside the folder and just run `npm install`
 
 ### TODO
