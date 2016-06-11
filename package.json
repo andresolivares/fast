@@ -7,7 +7,7 @@
     "server": "browser-sync start --server --files './*, assets/css/*.css'",
     "sass": "node-sass --output-style expanded assets/sass/app.sass assets/css/app.css",
     "prefix": "postcss -u autoprefixer -r assets/css/app.css",
-    "minify:css": "minify 'assets/css/app.css'",
+    "minify:css": "cleancss -o assets/css/app.min.css assets/css/app.css",
     "build:css": "npm run sass && npm run prefix && npm run minify:css",
     "watch:css": "onchange 'assets/sass/**/*.sass' -- npm run build:css",
     "watch:all": "parallelshell 'npm run server' 'npm run watch:css'",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "browser-sync": "^2.13.0",
-    "minifier": "^0.7.1",
+    "clean-css": "^3.4.17",
     "node-sass": "^3.7.0",
     "onchange": "^2.5.0",
     "parallelshell": "^2.0.0",
