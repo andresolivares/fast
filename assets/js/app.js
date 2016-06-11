@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", function() {
-  console.log("Fast 1");
+  console.log("Fast 2");
 });
