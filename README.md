@@ -8,8 +8,8 @@ A little tool for fast prototyping.
 
 ### Usage
 
-1. Clone the repo: `https://github.com/franciscogo/fast.git`
-2. Go to inside the folder and just run `npm install`
+1. Clone the repo: `git clone https://github.com/franciscogo/fast.git your-project`
+2. Go to inside `your-project` and run `npm install`
 
 ### TODO
 
