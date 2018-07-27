@@ -1,3 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("Fast 2");
-});
+(function () {
+  console.log('Release!');
+})();
