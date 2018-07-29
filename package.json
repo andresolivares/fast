@@ -1,10 +1,10 @@
 {
   "name": "fast",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A tool for fast prototyping",
   "main": "index.js",
   "scripts": {
-    "server": "browser-sync start --server --files './*, assets/css/*.css'",
+    "server": "browser-sync start --server --files './*, assets/js/**/*.js, assets/css/*.css'",
     "sass": "node-sass --output-style expanded assets/sass/app.scss assets/css/app.css",
     "prefix": "postcss -u autoprefixer -r assets/css/app.css",
     "cmq": "mqpacker assets/css/app.css assets/css/app.css",
@@ -12,7 +12,8 @@
     "build:css": "npm run sass && npm run prefix && npm run cmq && npm run minify:css",
     "watch:css": "onchange 'assets/sass/**/*.scss' -- npm run build:css",
     "watch:all": "parallelshell 'npm run server' 'npm run watch:css'",
-    "postinstall": "npm run watch:all"
+    "postinstall": "npm run watch:all",
+    "start": "npm run watch:all"
   },
   "keywords": [
     "tool"
